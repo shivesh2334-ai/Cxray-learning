@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: light; }
+html { scroll-behavior: smooth; }
+body { @apply bg-box text-ink font-sans antialiased; }
+h1, h2, h3 { @apply font-sans tracking-tight; }
+.prose-kb { @apply font-serif text-[1.05rem] leading-[1.7]; }
+.focus-ring:focus-visible, a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible {
+  outline: 2px solid #0E6577; outline-offset: 2px;
+}
+.film { background: #0F1518; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
